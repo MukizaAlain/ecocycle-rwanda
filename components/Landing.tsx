@@ -71,7 +71,7 @@ export const Landing: React.FC<LandingProps> = ({ onNavigate }) => {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] bg-primary/20 blur-[100px] rounded-full -z-10"></div>
               <div 
                 className="relative z-10 w-full max-w-[420px] aspect-[4/5] rounded-xl overflow-hidden shadow-2xl border border-white/20 bg-surface-dark group" 
-                style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuB15GXl4Z4ijZlBlbHAWglPxEHCx3vRP_IYWFU8Aoe5erTaEejWNI4PRppXHa993bldigNK_qJH9jPI1LgAgA1gCk3nnyEglQE5LnrIjNz0laWclaYET5e8I2Ciyq0Bj8Rod0UzLdWaleAM10XVRnrLkScYW0kQqZFKTBbwg-vekBUIag-EuXh77pl3j3zEh06B0AYeSgwN_QJZug7odD_w3RJlvBhMNB_g1P44oI-nKzC2vJJoeSy-z6U98w3Oa9F4bJ6anM5TuNA")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: 'url("/phone.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
                 {/* Mock UI Element */}

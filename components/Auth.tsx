@@ -38,12 +38,12 @@ export const Auth: React.FC<AuthProps> = ({ onNavigate }) => {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
           <div className="relative z-10 flex flex-col gap-4 max-w-lg">
-            <div className="flex items-center gap-3 mb-2">
+            <button onClick={() => onNavigate('landing')} className="flex items-center gap-3 mb-2 hover:opacity-80 transition-opacity cursor-pointer">
               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-background-dark">
                 <Recycle size={24} />
               </div>
               <p className="text-white text-lg font-medium tracking-wide">EcoCycle Rwanda</p>
-            </div>
+            </button>
             <h2 className="text-white text-5xl font-bold leading-tight tracking-tight">
                 Reviving Tech, <br />
                 <span className="text-primary">Restoring Nature</span>
@@ -61,10 +61,10 @@ export const Auth: React.FC<AuthProps> = ({ onNavigate }) => {
          <div className="absolute inset-0 opacity-5 pointer-events-none lg:hidden" style={{ backgroundImage: 'radial-gradient(#2bee79 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
          <div className="w-full max-w-[440px] z-10 flex flex-col gap-6 animate-screen-enter" key={view}>
-            <div className="w-full lg:hidden flex items-center gap-2 mb-2 justify-center">
+            <button onClick={() => onNavigate('landing')} className="w-full lg:hidden flex items-center gap-2 mb-2 justify-center hover:opacity-80 transition-opacity cursor-pointer">
                 <Recycle className="text-primary" size={32} />
-                <span className="text-xl font-bold text-white">EcoCycle</span>
-            </div>
+                <span className="text-xl font-bold text-white">EcoCycle Rwanda</span>
+            </button>
 
             {/* Forgot Password View */}
             {view === 'forgot' ? (

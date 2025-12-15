@@ -111,7 +111,9 @@ const App: React.FC = () => {
             <button onClick={() => setIsMobileMenuOpen(true)} className="p-2 text-white">
               <Menu size={24} />
             </button>
-            <span className="text-white font-bold text-lg">EcoCycle</span>
+            <button onClick={() => handleNavigate('landing')} className="text-white font-bold text-lg hover:opacity-80 transition-opacity">
+              EcoCycle
+            </button>
           </div>
           <div className="size-8 rounded-full bg-cover bg-center border border-primary/20" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDbK9lG4KyS8A-nxMCyaeUFty9DJ5gv_WN6U4fpgx846gRh2ciLdY8yo4Q1gbjhHOYdI8eXfKdsPZThrqiORhAudJPn-_ByXhY8kK9NBghSba8_IKqk_uSjLl6faKyLkUGctR3X3y6y5ShfrKkRPQfl2UpzaQtNxSa1hhsYa3RdsuL1Sf7ReTsCc3wjwEYHwLffLkvE-wscjPzt0VyGxiM7wtxjFAVe3IX_5HWLcQOUOen5mHB3bcKRlqPDJ-CXt7x2WbF9BPJV1g")' }}></div>
         </header>

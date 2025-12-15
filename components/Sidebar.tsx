@@ -22,7 +22,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentScreen, onNavigate, isM
     <aside className="flex h-full w-full flex-col border-r border-white/5 bg-eco-dark/80 backdrop-blur-xl">
       <div className="flex h-full flex-col justify-between p-6">
         <div className="flex flex-col gap-8">
-          <div className="flex flex-col gap-1 px-2">
+          <button onClick={() => onNavigate('landing')} className="flex flex-col gap-1 px-2 hover:opacity-80 transition-opacity cursor-pointer">
             <div className="flex items-center gap-3 mb-2">
                  <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
                     <Recycle size={24} />
@@ -33,7 +33,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentScreen, onNavigate, isM
                  </div>
             </div>
             {!isMobile && <p className="text-eco-text-secondary text-xs font-normal pl-1">Recycle E-Waste for a Greener Future</p>}
-          </div>
+          </button>
 
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => {
